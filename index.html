@@ -1,0 +1,3374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>UN SOLO COMPÁS | Copa Cuba–México de Salsa 2027</title>
+
+  <meta
+    name="description"
+    content="UN SOLO COMPÁS — Copa Cuba–México de Salsa. Puerto Vallarta, 30 de enero de 2027. Competencia de salsa abierta, talleres, fiesta de bienvenida y after party."
+  >
+
+  <meta name="theme-color" content="#070707">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="UN SOLO COMPÁS — Copa Cuba–México de Salsa">
+  <meta property="og:description" content="La pista. La música. La conexión. Una sola historia. Puerto Vallarta · 30 de enero de 2027.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+
+    /* =========================================================
+       VARIABLES
+    ========================================================== */
+
+    :root {
+
+      --black: #070707;
+      --black-2: #0d0d0d;
+      --black-3: #121212;
+      --black-4: #171717;
+
+      --white: #f6f2ea;
+      --white-soft: #dedbd4;
+
+      --gray: #9d9a93;
+      --gray-dark: #65625e;
+
+      --red: #a90f19;
+      --red-2: #d21b27;
+      --red-dark: #52070c;
+
+      --gold: #bd974f;
+      --gold-light: #e0c477;
+      --gold-pale: #f0d998;
+
+      --green: #91c74b;
+
+      --line: rgba(224, 196, 119, .20);
+      --line-white: rgba(255,255,255,.09);
+
+      --serif: "Cormorant Garamond", serif;
+      --sans: "Montserrat", sans-serif;
+
+      --container: 1180px;
+
+    }
+
+
+    /* =========================================================
+       RESET
+    ========================================================== */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: var(--sans);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    body::selection {
+      background: var(--red);
+      color: white;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    button {
+      font-family: inherit;
+    }
+
+
+    /* =========================================================
+       GLOBAL
+    ========================================================== */
+
+    .container {
+      width: min(var(--container), calc(100% - 44px));
+      margin: auto;
+    }
+
+    .section {
+      position: relative;
+      padding: 120px 0;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+
+      color: var(--gold-light);
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 34px;
+      height: 1px;
+      background: var(--gold);
+    }
+
+    .section-heading {
+      max-width: 760px;
+    }
+
+    .section-heading h2 {
+      margin-top: 20px;
+
+      font-family: var(--serif);
+      font-size: clamp(48px, 7vw, 86px);
+      line-height: .88;
+      font-weight: 600;
+      letter-spacing: -2px;
+    }
+
+    .section-heading p {
+      margin-top: 25px;
+      color: var(--gray);
+      max-width: 620px;
+      font-size: 14px;
+    }
+
+    .gold-line {
+      width: 68px;
+      height: 2px;
+      background: var(--gold);
+      margin-top: 25px;
+    }
+
+    .center {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+    /* =========================================================
+       BUTTONS
+    ========================================================== */
+
+    .btn {
+      min-height: 54px;
+      padding: 0 28px;
+
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      border: 1px solid transparent;
+
+      font-size: 10px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+
+      transition:
+        transform .28s ease,
+        background .28s ease,
+        border-color .28s ease,
+        box-shadow .28s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    .btn-red {
+      background: var(--red);
+      color: white;
+      box-shadow: 0 15px 35px rgba(169,15,25,.22);
+    }
+
+    .btn-red:hover {
+      background: var(--red-2);
+      box-shadow: 0 18px 40px rgba(169,15,25,.35);
+    }
+
+    .btn-gold {
+      border-color: rgba(224,196,119,.65);
+      color: var(--gold-light);
+    }
+
+    .btn-gold:hover {
+      background: rgba(224,196,119,.08);
+    }
+
+    .btn-green {
+      border-color: rgba(145,199,75,.6);
+      color: var(--green);
+    }
+
+    .btn-green:hover {
+      background: rgba(145,199,75,.07);
+    }
+
+
+    /* =========================================================
+       NAV
+    ========================================================== */
+
+    .nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      z-index: 100;
+
+      padding: 26px 0;
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-size: 25px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .logo span {
+      color: var(--gold);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 700;
+    }
+
+    .nav-links a {
+      color: var(--white-soft);
+      transition: color .25s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-light);
+    }
+
+    .nav-cta {
+      border: 1px solid var(--gold);
+      padding: 10px 17px;
+      color: var(--gold-light) !important;
+    }
+
+
+    /* =========================================================
+       HERO
+    ========================================================== */
+
+    .hero {
+      min-height: 100vh;
+      position: relative;
+      overflow: hidden;
+
+      display: flex;
+      align-items: center;
+
+      padding-top: 120px;
+      padding-bottom: 80px;
+
+      background:
+        radial-gradient(circle at 75% 27%, rgba(169,15,25,.24), transparent 28%),
+        radial-gradient(circle at 23% 90%, rgba(189,151,79,.07), transparent 28%),
+        linear-gradient(115deg, #060606 0%, #090909 55%, #0c0808 100%);
+    }
+
+    /* Elegant circles */
+    .hero::before {
+      content: "";
+
+      position: absolute;
+
+      width: 650px;
+      height: 650px;
+
+      border-radius: 50%;
+      border: 1px solid rgba(224,196,119,.11);
+
+      right: -260px;
+      top: 10%;
+    }
+
+    .hero::after {
+      content: "";
+
+      position: absolute;
+
+      width: 420px;
+      height: 420px;
+
+      border-radius: 50%;
+      border: 1px solid rgba(169,15,25,.20);
+
+      right: -110px;
+      top: 25%;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+
+      gap: 80px;
+      align-items: center;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 4;
+    }
+
+    .hero-kicker {
+      color: var(--gold-light);
+
+      font-size: 10px;
+      font-weight: 800;
+
+      letter-spacing: 4px;
+      text-transform: uppercase;
+
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-family: var(--serif);
+
+      font-size: clamp(76px, 11vw, 150px);
+      line-height: .74;
+
+      font-weight: 600;
+
+      letter-spacing: -6px;
+    }
+
+    .hero h1 .red {
+      display: block;
+      color: var(--red-2);
+    }
+
+    .hero-tagline {
+      margin-top: 35px;
+
+      max-width: 680px;
+
+      font-family: var(--serif);
+      font-size: clamp(24px, 3vw, 34px);
+
+      line-height: 1.05;
+
+      color: var(--gold-pale);
+    }
+
+    .hero-description {
+      max-width: 640px;
+
+      margin-top: 22px;
+
+      color: var(--gray);
+
+      font-size: 13px;
+    }
+
+    .hero-meta {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+
+      width: fit-content;
+
+      margin-top: 36px;
+
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-meta-item {
+      min-width: 145px;
+
+      padding: 16px 25px;
+
+      border-right: 1px solid rgba(255,255,255,.10);
+    }
+
+    .hero-meta-item:first-child {
+      padding-left: 0;
+    }
+
+    .hero-meta-item:last-child {
+      border: none;
+    }
+
+    .meta-label {
+      display: block;
+
+      color: var(--gray-dark);
+
+      font-size: 8px;
+      font-weight: 700;
+
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+
+      margin-bottom: 4px;
+    }
+
+    .meta-value {
+      color: var(--white);
+
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 13px;
+
+      flex-wrap: wrap;
+
+      margin-top: 34px;
+    }
+
+
+    /* Hero visual */
+
+    .hero-visual {
+      min-height: 510px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      position: relative;
+      z-index: 4;
+    }
+
+    .visual-disc {
+      width: min(450px, 80vw);
+      aspect-ratio: 1;
+
+      border-radius: 50%;
+
+      position: relative;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border: 1px solid rgba(224,196,119,.46);
+
+      background:
+        radial-gradient(
+          circle,
+          rgba(255,255,255,.03) 0%,
+          rgba(255,255,255,0) 63%
+        );
+
+      box-shadow:
+        0 0 0 18px rgba(189,151,79,.025),
+        0 0 0 70px rgba(169,15,25,.02);
+    }
+
+    .visual-disc::before {
+      content: "";
+
+      position: absolute;
+      inset: 24px;
+
+      border: 1px solid rgba(169,15,25,.62);
+      border-radius: 50%;
+    }
+
+    .visual-disc::after {
+      content: "";
+
+      position: absolute;
+      inset: 80px;
+
+      border: 1px dashed rgba(224,196,119,.25);
+      border-radius: 50%;
+    }
+
+    .visual-center {
+      text-align: center;
+      z-index: 2;
+    }
+
+    .visual-small {
+      font-size: 9px;
+
+      text-transform: uppercase;
+      letter-spacing: 4px;
+
+      color: var(--gray);
+
+      margin-bottom: 19px;
+    }
+
+    .visual-date {
+      font-family: var(--serif);
+
+      font-size: 105px;
+
+      line-height: .75;
+
+      color: var(--gold-light);
+    }
+
+    .visual-month {
+      margin-top: 16px;
+
+      font-size: 11px;
+      font-weight: 800;
+
+      text-transform: uppercase;
+      letter-spacing: 5px;
+    }
+
+    .visual-location {
+      margin-top: 13px;
+
+      font-size: 9px;
+
+      color: var(--gray);
+
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .orbit-dot {
+      position: absolute;
+
+      width: 7px;
+      height: 7px;
+
+      border-radius: 50%;
+
+      background: var(--green);
+
+      top: 20px;
+      right: 100px;
+
+      box-shadow:
+        0 0 0 5px rgba(145,199,75,.05),
+        0 0 20px rgba(145,199,75,.55);
+    }
+
+    .orbit-dot.red {
+      background: var(--red-2);
+
+      top: auto;
+      right: auto;
+
+      bottom: 75px;
+      left: 50px;
+
+      box-shadow:
+        0 0 0 5px rgba(210,27,39,.05),
+        0 0 20px rgba(210,27,39,.55);
+    }
+
+
+    /* =========================================================
+       COUNTDOWN
+    ========================================================== */
+
+    .countdown-bar {
+      position: relative;
+      z-index: 10;
+
+      margin-top: -1px;
+
+      padding: 19px 0;
+
+      background: var(--red);
+
+      border-top: 1px solid rgba(255,255,255,.08);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+
+    .countdown-inner {
+      display: flex;
+
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 30px;
+    }
+
+    .countdown-title {
+      font-size: 9px;
+      font-weight: 800;
+
+      text-transform: uppercase;
+      letter-spacing: 2px;
+
+      white-space: nowrap;
+    }
+
+    .countdown {
+      display: flex;
+      align-items: center;
+
+      gap: 20px;
+    }
+
+    .count-item {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+
+    .count-number {
+      font-family: var(--serif);
+
+      font-size: 27px;
+
+      color: white;
+
+      line-height: 1;
+    }
+
+    .count-label {
+      font-size: 7px;
+
+      text-transform: uppercase;
+      letter-spacing: 1px;
+
+      opacity: .72;
+    }
+
+
+    /* =========================================================
+       MANIFESTO
+    ========================================================== */
+
+    .manifesto {
+      background: var(--black-2);
+      overflow: hidden;
+    }
+
+    .manifesto::before {
+      content: "COMPÁS";
+
+      position: absolute;
+
+      font-family: var(--serif);
+
+      font-size: 240px;
+
+      color: rgba(255,255,255,.015);
+
+      right: -10px;
+      bottom: -90px;
+
+      pointer-events: none;
+    }
+
+    .manifesto-layout {
+      display: grid;
+      grid-template-columns: .75fr 1.25fr;
+
+      gap: 100px;
+
+      align-items: start;
+    }
+
+    .manifesto-number {
+      font-family: var(--serif);
+
+      font-size: 175px;
+
+      line-height: .7;
+
+      color: var(--red-2);
+
+      font-weight: 600;
+
+      opacity: .95;
+    }
+
+    .manifesto-copy h2 {
+      font-family: var(--serif);
+
+      font-size: clamp(48px, 6vw, 78px);
+
+      line-height: .9;
+
+      font-weight: 600;
+    }
+
+    .manifesto-copy h2 span {
+      color: var(--gold-light);
+    }
+
+    .manifesto-copy p {
+      max-width: 660px;
+
+      margin-top: 28px;
+
+      color: var(--gray);
+
+      font-size: 14px;
+    }
+
+    .manifesto-highlight {
+      margin-top: 36px;
+
+      padding: 22px 24px;
+
+      border-left: 2px solid var(--red);
+
+      background: rgba(169,15,25,.05);
+
+      color: var(--white-soft);
+
+      font-family: var(--serif);
+
+      font-size: 26px;
+
+      line-height: 1.05;
+    }
+
+
+    /* =========================================================
+       EXPERIENCE
+    ========================================================== */
+
+    .experience {
+      background:
+        radial-gradient(circle at 15% 40%, rgba(169,15,25,.08), transparent 25%),
+        var(--black);
+    }
+
+    .experience-intro {
+      display: flex;
+
+      align-items: end;
+      justify-content: space-between;
+
+      gap: 40px;
+
+      margin-bottom: 60px;
+    }
+
+    .experience-intro p {
+      max-width: 370px;
+
+      color: var(--gray);
+
+      font-size: 13px;
+    }
+
+    .timeline {
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .timeline-card {
+      min-height: 320px;
+
+      padding: 34px 30px;
+
+      position: relative;
+
+      border-right: 1px solid var(--line);
+
+      transition:
+        background .35s ease,
+        transform .35s ease;
+    }
+
+    .timeline-card:last-child {
+      border-right: none;
+    }
+
+    .timeline-card:hover {
+      background: rgba(255,255,255,.025);
+      transform: translateY(-4px);
+    }
+
+    .timeline-date {
+      color: var(--gold-light);
+
+      font-size: 9px;
+      font-weight: 800;
+
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .timeline-title {
+      margin-top: 45px;
+
+      font-family: var(--serif);
+
+      font-size: 43px;
+
+      line-height: .9;
+    }
+
+    .timeline-title span {
+      display: block;
+
+      color: var(--red-2);
+    }
+
+    .timeline-description {
+      margin-top: 19px;
+
+      max-width: 300px;
+
+      color: var(--gray);
+
+      font-size: 12px;
+    }
+
+    .timeline-bottom {
+      position: absolute;
+
+      bottom: 25px;
+
+      display: flex;
+      align-items: center;
+
+      gap: 10px;
+
+      color: var(--gold);
+
+      font-size: 8px;
+      text-transform: uppercase;
+
+      letter-spacing: 1.5px;
+      font-weight: 800;
+    }
+
+    .mini-dot {
+      width: 5px;
+      height: 5px;
+
+      border-radius: 50%;
+
+      background: var(--gold);
+    }
+
+    .timeline-card.after .mini-dot {
+      background: var(--green);
+      box-shadow: 0 0 10px rgba(145,199,75,.4);
+    }
+
+
+    /* =========================================================
+       COMPETITION
+    ========================================================== */
+
+    .competition {
+      background: var(--black-2);
+    }
+
+    .competition-grid {
+      margin-top: 65px;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      border: 1px solid var(--line);
+    }
+
+    .competition-item {
+      padding: 38px 32px;
+
+      min-height: 245px;
+
+      border-right: 1px solid var(--line);
+    }
+
+    .competition-item:last-child {
+      border-right: none;
+    }
+
+    .competition-number {
+      font-family: var(--serif);
+
+      font-size: 24px;
+
+      color: var(--gold);
+
+      margin-bottom: 35px;
+    }
+
+    .competition-item h3 {
+      font-family: var(--serif);
+
+      font-size: 35px;
+
+      line-height: .9;
+
+      margin-bottom: 13px;
+    }
+
+    .competition-item p {
+      color: var(--gray);
+
+      font-size: 12px;
+    }
+
+    .judge-section {
+      margin-top: 60px;
+
+      display: grid;
+      grid-template-columns: .7fr 1.3fr;
+
+      gap: 40px;
+
+      padding-top: 35px;
+
+      border-top: 1px solid var(--line);
+    }
+
+    .judge-heading {
+      font-family: var(--serif);
+
+      font-size: 40px;
+      line-height: .9;
+    }
+
+    .criteria {
+      display: grid;
+
+      grid-template-columns: repeat(5, 1fr);
+
+      gap: 10px;
+    }
+
+    .criterion {
+      border-left: 1px solid var(--gold);
+
+      padding: 12px;
+
+      color: var(--white-soft);
+
+      font-size: 9px;
+      font-weight: 700;
+
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+
+    /* =========================================================
+       PRIZES
+    ========================================================== */
+
+    .prizes {
+      position: relative;
+
+      background:
+        radial-gradient(circle at 50% 25%, rgba(189,151,79,.10), transparent 30%),
+        #080808;
+    }
+
+    .prize-intro {
+      text-align: center;
+
+      margin-bottom: 70px;
+    }
+
+    .prize-intro .eyebrow {
+      justify-content: center;
+    }
+
+    .prize-intro .eyebrow::before {
+      display: none;
+    }
+
+    .prize-intro h2 {
+      font-family: var(--serif);
+
+      margin-top: 18px;
+
+      font-size: clamp(52px, 7vw, 90px);
+
+      line-height: .85;
+    }
+
+    .prize-intro p {
+      max-width: 600px;
+
+      margin: 23px auto 0;
+
+      color: var(--gray);
+
+      font-size: 13px;
+    }
+
+    .podium {
+      max-width: 960px;
+
+      margin: auto;
+
+      display: grid;
+
+      grid-template-columns: .86fr 1.18fr .86fr;
+
+      gap: 12px;
+
+      align-items: end;
+    }
+
+    .prize-card {
+      position: relative;
+
+      padding: 35px 20px;
+
+      text-align: center;
+
+      border: 1px solid rgba(224,196,119,.18);
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(255,255,255,.035),
+          rgba(255,255,255,.012)
+        );
+    }
+
+    .prize-card.second {
+      min-height: 285px;
+    }
+
+    .prize-card.first {
+      min-height: 390px;
+
+      background:
+        linear-gradient(
+          180deg,
+          rgba(189,151,79,.11),
+          rgba(255,255,255,.015)
+        );
+
+      border-color: rgba(224,196,119,.52);
+
+      box-shadow:
+        0 25px 70px rgba(0,0,0,.30);
+    }
+
+    .prize-card.third {
+      min-height: 245px;
+    }
+
+    .winner-badge {
+      position: absolute;
+
+      top: -14px;
+      left: 50%;
+
+      transform: translateX(-50%);
+
+      padding: 7px 14px;
+
+      background: var(--red);
+
+      color: white;
+
+      font-size: 8px;
+      font-weight: 800;
+
+      text-transform: uppercase;
+      letter-spacing: 1.7px;
+
+      white-space: nowrap;
+    }
+
+    .place {
+      font-family: var(--serif);
+
+      font-size: 23px;
+
+      color: var(--gold-light);
+    }
+
+    .amount {
+      margin-top: 25px;
+
+      font-family: var(--serif);
+
+      font-size: 70px;
+
+      line-height: .85;
+
+      font-weight: 600;
+    }
+
+    .first .amount {
+      font-size: clamp(74px, 7vw, 100px);
+
+      color: var(--gold-pale);
+    }
+
+    .currency {
+      margin-top: 16px;
+
+      font-size: 8px;
+
+      text-transform: uppercase;
+
+      color: var(--gray);
+
+      letter-spacing: 2px;
+    }
+
+
+    /* =========================================================
+       TICKETS
+    ========================================================== */
+
+    .tickets {
+      background: #111;
+    }
+
+    .ticket-header {
+      max-width: 720px;
+
+      margin-bottom: 60px;
+    }
+
+    .ticket-grid {
+      display: grid;
+
+      grid-template-columns: 1fr 1fr;
+
+      gap: 16px;
+    }
+
+    .ticket-card {
+      padding: 42px;
+
+      position: relative;
+
+      overflow: hidden;
+
+      border: 1px solid rgba(255,255,255,.08);
+    }
+
+    .ticket-card::after {
+      content: "";
+
+      position: absolute;
+
+      width: 180px;
+      height: 180px;
+
+      border-radius: 50%;
+
+      border: 1px solid rgba(224,196,119,.10);
+
+      right: -90px;
+      bottom: -90px;
+    }
+
+    .ticket-public {
+      background: #171717;
+    }
+
+    .ticket-competitor {
+      background:
+        linear-gradient(135deg, rgba(169,15,25,.13), transparent 65%),
+        #141111;
+
+      border-color: rgba(169,15,25,.42);
+    }
+
+    .ticket-type {
+      color: var(--gold);
+
+      font-size: 9px;
+
+      font-weight: 800;
+
+      letter-spacing: 2px;
+
+      text-transform: uppercase;
+    }
+
+    .ticket-card h3 {
+      margin-top: 19px;
+
+      font-family: var(--serif);
+
+      font-size: 45px;
+
+      line-height: .9;
+    }
+
+    .ticket-card p {
+      margin-top: 17px;
+
+      max-width: 430px;
+
+      min-height: 48px;
+
+      color: var(--gray);
+
+      font-size: 12px;
+    }
+
+    .ticket-price {
+      margin: 35px 0;
+
+      font-family: var(--serif);
+
+      font-size: 82px;
+
+      line-height: .8;
+    }
+
+    .ticket-price small {
+      font-family: var(--sans);
+
+      font-size: 10px;
+
+      color: var(--gray);
+
+      letter-spacing: 1px;
+    }
+
+    .ticket-notice {
+      margin-top: 27px;
+
+      padding-top: 19px;
+
+      border-top: 1px solid var(--line);
+
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 20px;
+    }
+
+    .ticket-notice span {
+      color: var(--gray);
+
+      font-size: 9px;
+
+      text-transform: uppercase;
+
+      letter-spacing: 1.5px;
+    }
+
+    .ticket-notice strong {
+      color: var(--gold-light);
+
+      font-family: var(--serif);
+
+      font-size: 25px;
+
+      line-height: 1;
+    }
+
+
+    /* =========================================================
+       WHY COMPETE
+    ========================================================== */
+
+    .why {
+      background:
+        radial-gradient(circle at 90% 50%, rgba(169,15,25,.10), transparent 28%),
+        var(--black);
+    }
+
+    .why-grid {
+      margin-top: 55px;
+
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 20px;
+    }
+
+    .why-card {
+      padding: 36px 30px;
+
+      border-top: 1px solid var(--line);
+
+      transition: transform .3s ease;
+    }
+
+    .why-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .why-icon {
+      width: 36px;
+      height: 36px;
+
+      display: grid;
+      place-items: center;
+
+      margin-bottom: 30px;
+
+      border: 1px solid rgba(224,196,119,.4);
+
+      color: var(--gold-light);
+    }
+
+    .why-icon svg {
+      width: 17px;
+      height: 17px;
+    }
+
+    .why-card h3 {
+      font-family: var(--serif);
+
+      font-size: 35px;
+
+      line-height: .92;
+    }
+
+    .why-card p {
+      margin-top: 15px;
+
+      color: var(--gray);
+
+      font-size: 12px;
+    }
+
+
+    /* =========================================================
+       RESERVATION / PROCESS
+    ========================================================== */
+
+    .process {
+      background: var(--black-2);
+    }
+
+    .process-box {
+      border: 1px solid rgba(224,196,119,.25);
+
+      padding: 60px;
+
+      background:
+        radial-gradient(
+          circle at 80% 30%,
+          rgba(169,15,25,.10),
+          transparent 30%
+        );
+    }
+
+    .process-grid {
+      margin-top: 45px;
+
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+
+      gap: 20px;
+    }
+
+    .process-item {
+      padding: 24px;
+
+      border: 1px solid rgba(255,255,255,.07);
+
+      background: rgba(0,0,0,.16);
+    }
+
+    .process-number {
+      color: var(--red-2);
+
+      font-family: var(--serif);
+
+      font-size: 26px;
+    }
+
+    .process-item h3 {
+      margin-top: 18px;
+
+      font-family: var(--serif);
+
+      font-size: 31px;
+
+      line-height: .9;
+    }
+
+    .process-item p {
+      margin-top: 12px;
+
+      color: var(--gray);
+
+      font-size: 11px;
+    }
+
+
+    /* =========================================================
+       FAQ
+    ========================================================== */
+
+    .faq-grid {
+      margin-top: 55px;
+
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .faq-item {
+      border-top: 1px solid var(--line-white);
+    }
+
+    .faq-item:last-child {
+      border-bottom: 1px solid var(--line-white);
+    }
+
+    .faq-question {
+      width: 100%;
+
+      padding: 23px 0;
+
+      background: transparent;
+      border: none;
+
+      color: var(--white);
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      text-align: left;
+
+      cursor: pointer;
+
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .faq-plus {
+      font-size: 20px;
+
+      color: var(--gold);
+
+      transition: transform .3s ease;
+    }
+
+    .faq-answer {
+      max-height: 0;
+
+      overflow: hidden;
+
+      transition: max-height .35s ease;
+    }
+
+    .faq-answer p {
+      padding: 0 45px 22px 0;
+
+      color: var(--gray);
+
+      font-size: 12px;
+    }
+
+    .faq-item.active .faq-plus {
+      transform: rotate(45deg);
+    }
+
+
+    /* =========================================================
+       FINAL CTA
+    ========================================================== */
+
+    .final-cta {
+      padding: 130px 0;
+
+      position: relative;
+
+      background:
+        linear-gradient(
+          110deg,
+          rgba(169,15,25,.16),
+          transparent 55%
+        ),
+        #090909;
+
+      overflow: hidden;
+    }
+
+    .final-cta::before {
+      content: "";
+
+      position: absolute;
+
+      width: 650px;
+      height: 650px;
+
+      border-radius: 50%;
+
+      border: 1px solid rgba(224,196,119,.09);
+
+      right: -260px;
+      top: -180px;
+    }
+
+    .final-content {
+      position: relative;
+      z-index: 2;
+
+      max-width: 820px;
+    }
+
+    .final-content h2 {
+      margin-top: 20px;
+
+      font-family: var(--serif);
+
+      font-size: clamp(58px, 8vw, 105px);
+
+      line-height: .80;
+
+      letter-spacing: -3px;
+    }
+
+    .final-content h2 span {
+      color: var(--red-2);
+    }
+
+    .final-content p {
+      max-width: 630px;
+
+      margin-top: 25px;
+
+      color: var(--gray);
+
+      font-size: 13px;
+    }
+
+    .final-actions {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 12px;
+
+      margin-top: 35px;
+    }
+
+    .fineprint {
+      margin-top: 16px;
+
+      color: var(--gray-dark);
+
+      font-size: 8px;
+
+      text-transform: uppercase;
+
+      letter-spacing: 1.3px;
+    }
+
+
+    /* =========================================================
+       FOOTER
+    ========================================================== */
+
+    footer {
+      padding: 50px 0 28px;
+
+      background: #050505;
+
+      border-top: 1px solid rgba(224,196,119,.13);
+    }
+
+    .footer-top {
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 40px;
+
+      align-items: center;
+
+      padding-bottom: 36px;
+
+      border-bottom: 1px solid var(--line-white);
+    }
+
+    .footer-logo {
+      font-family: var(--serif);
+
+      font-size: 37px;
+
+      font-weight: 600;
+    }
+
+    .footer-logo span {
+      color: var(--gold);
+    }
+
+    .footer-info {
+      text-align: right;
+
+      color: var(--gray);
+
+      font-size: 10px;
+      line-height: 1.9;
+    }
+
+    .footer-info strong {
+      display: block;
+
+      color: var(--white);
+
+      font-size: 9px;
+
+      text-transform: uppercase;
+
+      letter-spacing: 2px;
+    }
+
+    .footer-bottom {
+      padding-top: 24px;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 30px;
+
+      color: #575550;
+
+      font-size: 8px;
+
+      text-transform: uppercase;
+
+      letter-spacing: 1.2px;
+    }
+
+    .instagram {
+      color: var(--gold);
+    }
+
+
+    /* =========================================================
+       FLOATING MOBILE CTA
+    ========================================================== */
+
+    .floating-cta {
+      display: none;
+
+      position: fixed;
+
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+
+      z-index: 999;
+
+      padding: 13px;
+
+      background: var(--red);
+
+      color: white;
+
+      text-align: center;
+
+      font-size: 10px;
+
+      font-weight: 800;
+
+      letter-spacing: 2px;
+
+      text-transform: uppercase;
+
+      box-shadow: 0 10px 35px rgba(0,0,0,.45);
+    }
+
+
+    /* =========================================================
+       REVEAL ANIMATION
+    ========================================================== */
+
+    .reveal {
+      opacity: 0;
+
+      transform: translateY(28px);
+
+      transition:
+        opacity .8s ease,
+        transform .8s cubic-bezier(.2,.75,.25,1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+
+      transform: translateY(0);
+    }
+
+
+    /* =========================================================
+       RESPONSIVE
+    ========================================================== */
+
+    @media (max-width: 920px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 120px;
+      }
+
+      .hero-grid,
+      .manifesto-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-grid {
+        gap: 60px;
+      }
+
+      .hero-visual {
+        min-height: 380px;
+      }
+
+      .visual-disc {
+        width: 350px;
+      }
+
+      .manifesto-layout {
+        gap: 40px;
+      }
+
+      .timeline {
+        grid-template-columns: 1fr;
+      }
+
+      .timeline-card {
+        border-right: none;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .timeline-card:last-child {
+        border-bottom: none;
+      }
+
+      .competition-grid,
+      .why-grid,
+      .process-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .competition-item {
+        border-right: none;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .competition-item:last-child {
+        border-bottom: none;
+      }
+
+      .judge-section {
+        grid-template-columns: 1fr;
+      }
+
+      .criteria {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .podium {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+      }
+
+      .prize-card.first {
+        order: -1;
+      }
+
+      .ticket-grid {
+        grid-template-columns: 1fr;
+      }
+
+    }
+
+
+    @media (max-width: 650px) {
+
+      .container {
+        width: min(100% - 28px, 620px);
+      }
+
+      .section {
+        padding: 82px 0;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 120px 0 70px;
+      }
+
+      .hero h1 {
+        font-size: clamp(67px, 20vw, 105px);
+        letter-spacing: -4px;
+      }
+
+      .hero-meta {
+        width: 100%;
+
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero-meta-item {
+        min-width: 0;
+      }
+
+      .hero-meta-item:nth-child(2) {
+        border-right: none;
+      }
+
+      .hero-meta-item:last-child {
+        grid-column: 1 / -1;
+
+        border-top: 1px solid var(--line);
+
+        padding-left: 0;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .hero-visual {
+        min-height: 310px;
+      }
+
+      .visual-disc {
+        width: 280px;
+      }
+
+      .visual-date {
+        font-size: 80px;
+      }
+
+      .countdown-inner {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 9px;
+      }
+
+      .countdown {
+        gap: 12px;
+      }
+
+      .count-number {
+        font-size: 23px;
+      }
+
+      .manifesto-number {
+        font-size: 125px;
+      }
+
+      .competition-item {
+        min-height: auto;
+      }
+
+      .criteria {
+        grid-template-columns: 1fr;
+      }
+
+      .ticket-card {
+        padding: 30px 24px;
+      }
+
+      .ticket-price {
+        font-size: 70px;
+      }
+
+      .process-box {
+        padding: 35px 24px;
+      }
+
+      .footer-top,
+      .footer-bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+      }
+
+      .footer-info {
+        text-align: left;
+      }
+
+      .floating-cta {
+        display: block;
+      }
+
+    }
+
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- =========================================================
+       NAVIGATION
+  ========================================================== -->
+
+  <nav class="nav">
+
+    <div class="container nav-inner">
+
+      <a class="logo" href="#inicio">
+        UN SOLO <span>COMPÁS</span>
+      </a>
+
+      <div class="nav-links">
+
+        <a href="#experiencia">Experiencia</a>
+        <a href="#competencia">Competencia</a>
+        <a href="#premios">Premios</a>
+        <a href="#boletos">Boletos</a>
+        <a href="#faq">FAQ</a>
+
+        <a href="#contacto" class="nav-cta">
+          Inscríbete
+        </a>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <!-- =========================================================
+       HERO
+  ========================================================== -->
+
+  <header class="hero" id="inicio">
+
+    <div class="container hero-grid">
+
+      <div class="hero-content reveal">
+
+        <div class="hero-kicker">
+          Copa Cuba–México de Salsa · Puerto Vallarta 2027
+        </div>
+
+        <h1>
+          UN SOLO
+          <span class="red">COMPÁS</span>
+        </h1>
+
+        <div class="hero-tagline">
+          La pista. La música. La conexión.<br>
+          Una sola historia.
+        </div>
+
+        <p class="hero-description">
+          El encuentro donde la salsa se convierte en espectáculo.
+          Una competencia de pareja mixta, una noche para vivir la
+          música y una experiencia creada para bailarines y amantes
+          de la salsa.
+        </p>
+
+        <div class="hero-meta">
+
+          <div class="hero-meta-item">
+            <span class="meta-label">Fecha</span>
+            <span class="meta-value">Sábado 30 de enero</span>
+          </div>
+
+          <div class="hero-meta-item">
+            <span class="meta-label">Sede</span>
+            <span class="meta-value">Salón del IMSS</span>
+          </div>
+
+          <div class="hero-meta-item">
+            <span class="meta-label">Ciudad</span>
+            <span class="meta-value">Puerto Vallarta, Jalisco</span>
+          </div>
+
+        </div>
+
+        <div class="hero-actions">
+
+          <a href="#contacto" class="btn btn-red">
+            Quiero competir
+          </a>
+
+          <a href="#boletos" class="btn btn-gold">
+            Quiero asistir
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="hero-visual reveal">
+
+        <div class="visual-disc">
+
+          <div class="orbit-dot"></div>
+          <div class="orbit-dot red"></div>
+
+          <div class="visual-center">
+
+            <div class="visual-small">
+              Marca la fecha
+            </div>
+
+            <div class="visual-date">
+              30
+            </div>
+
+            <div class="visual-month">
+              Enero · 2027
+            </div>
+
+            <div class="visual-location">
+              Puerto Vallarta · Jalisco
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================================================
+       COUNTDOWN
+  ========================================================== -->
+
+  <div class="countdown-bar">
+
+    <div class="container countdown-inner">
+
+      <div class="countdown-title">
+        El próximo compás comienza en
+      </div>
+
+      <div class="countdown" id="countdown">
+
+        <div class="count-item">
+          <span class="count-number" id="days">000</span>
+          <span class="count-label">días</span>
+        </div>
+
+        <div class="count-item">
+          <span class="count-number" id="hours">00</span>
+          <span class="count-label">hrs</span>
+        </div>
+
+        <div class="count-item">
+          <span class="count-number" id="minutes">00</span>
+          <span class="count-label">min</span>
+        </div>
+
+        <div class="count-item">
+          <span class="count-number" id="seconds">00</span>
+          <span class="count-label">seg</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================================================
+       MANIFESTO
+  ========================================================== -->
+
+  <section class="section manifesto">
+
+    <div class="container manifesto-layout">
+
+      <div class="manifesto-number reveal">
+        01
+      </div>
+
+      <div class="manifesto-copy reveal">
+
+        <div class="eyebrow">
+          Mucho más que una competencia
+        </div>
+
+        <h2>
+          Hay noches que se viven.
+          <span>Y otras que se recuerdan.</span>
+        </h2>
+
+        <div class="gold-line"></div>
+
+        <p>
+          UN SOLO COMPÁS nace para reunir en Puerto Vallarta a
+          bailarines, espectadores y amantes de la salsa alrededor
+          de una misma pista.
+        </p>
+
+        <p>
+          Aquí no se trata solamente de ejecutar una coreografía.
+          Se trata de interpretar la música, conectar con el público,
+          compartir energía y dejar una historia sobre el escenario.
+        </p>
+
+        <div class="manifesto-highlight">
+          “No importa cuántas veces hayas bailado esa canción.
+          Sobre esta pista, será la primera vez.”
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       EXPERIENCE
+  ========================================================== -->
+
+  <section class="section experience" id="experiencia">
+
+    <div class="container">
+
+      <div class="experience-intro">
+
+        <div class="section-heading reveal">
+
+          <div class="eyebrow">
+            La experiencia
+          </div>
+
+          <h2>
+            Un fin de semana<br>
+            para bailar.
+          </h2>
+
+          <div class="gold-line"></div>
+
+        </div>
+
+        <p class="reveal">
+          Porque una gran competencia no empieza cuando subes
+          al escenario. Empieza desde que llegas a Puerto Vallarta.
+        </p>
+
+      </div>
+
+
+      <div class="timeline">
+
+        <article class="timeline-card reveal">
+
+          <div class="timeline-date">
+            Viernes · 29 enero
+          </div>
+
+          <div class="timeline-title">
+            Welcome
+            <span>Party</span>
+          </div>
+
+          <p class="timeline-description">
+            Comienza el fin de semana con nuestra fiesta de bienvenida.
+            Conoce bailarines, comparte la pista y entra en ambiente
+            antes de la gran noche.
+          </p>
+
+          <div class="timeline-bottom">
+            <span class="mini-dot"></span>
+            Puerto Vallarta
+          </div>
+
+        </article>
+
+
+        <article class="timeline-card reveal">
+
+          <div class="timeline-date">
+            Sábado · 30 enero
+          </div>
+
+          <div class="timeline-title">
+            La gran
+            <span>competencia</span>
+          </div>
+
+          <p class="timeline-description">
+            Parejas de salsa abierta se encuentran sobre la pista
+            para disputar el podio y el gran premio de
+            $12,000 MXN.
+          </p>
+
+          <div class="timeline-bottom">
+            <span class="mini-dot"></span>
+            Salón del IMSS
+          </div>
+
+        </article>
+
+
+        <article class="timeline-card after reveal">
+
+          <div class="timeline-date">
+            Después de la competencia
+          </div>
+
+          <div class="timeline-title">
+            After
+            <span>Party</span>
+          </div>
+
+          <p class="timeline-description">
+            La noche todavía no termina. Después de la competencia,
+            seguimos bailando en el after party oficial.
+          </p>
+
+          <div class="timeline-bottom">
+            <span class="mini-dot"></span>
+            Mestizo
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       COMPETITION
+  ========================================================== -->
+
+  <section class="section competition" id="competencia">
+
+    <div class="container">
+
+      <div class="section-heading reveal">
+
+        <div class="eyebrow">
+          El desafío
+        </div>
+
+        <h2>
+          Cuando la música<br>
+          empieza, habla la pista.
+        </h2>
+
+        <div class="gold-line"></div>
+
+        <p>
+          Una categoría abierta para parejas que quieran mostrar
+          personalidad, técnica y musicalidad frente al público.
+        </p>
+
+      </div>
+
+
+      <div class="competition-grid">
+
+        <article class="competition-item reveal">
+
+          <div class="competition-number">
+            01
+          </div>
+
+          <h3>
+            Salsa<br>
+            abierta
+          </h3>
+
+          <p>
+            Categoría de salsa abierta,
+            pareja mixta: un hombre y una mujer.
+          </p>
+
+        </article>
+
+
+        <article class="competition-item reveal">
+
+          <div class="competition-number">
+            02
+          </div>
+
+          <h3>
+            2:00 —<br>
+            2:30 min
+          </h3>
+
+          <p>
+            Cada pareja contará con una coreografía
+            de entre 2 minutos y 2 minutos 30 segundos.
+          </p>
+
+        </article>
+
+
+        <article class="competition-item reveal">
+
+          <div class="competition-number">
+            03
+          </div>
+
+          <h3>
+            Orden por<br>
+            sorteo
+          </h3>
+
+          <p>
+            El orden de participación será determinado
+            mediante sorteo.
+          </p>
+
+        </article>
+
+      </div>
+
+
+      <div class="judge-section reveal">
+
+        <div class="judge-heading">
+          ¿Qué hace<br>
+          destacar a una pareja?
+        </div>
+
+        <div class="criteria">
+
+          <div class="criterion">
+            Técnica
+          </div>
+
+          <div class="criterion">
+            Sincronía
+          </div>
+
+          <div class="criterion">
+            Musicalidad
+          </div>
+
+          <div class="criterion">
+            Vestuario
+          </div>
+
+          <div class="criterion">
+            Conexión<br>con el público
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       PRIZES
+  ========================================================== -->
+
+  <section class="section prizes" id="premios">
+
+    <div class="container">
+
+      <div class="prize-intro reveal">
+
+        <div class="eyebrow">
+          El podio tiene nombre
+        </div>
+
+        <h2>
+          $16,500 MXN<br>
+          en premios.
+        </h2>
+
+        <div class="gold-line center"></div>
+
+        <p>
+          Tres lugares. Una pista. Una noche para demostrar
+          todo lo que una pareja puede hacer cuando realmente
+          encuentra un solo compás.
+        </p>
+
+      </div>
+
+
+      <div class="podium">
+
+        <article class="prize-card second reveal">
+
+          <div class="place">
+            2º Lugar
+          </div>
+
+          <div class="amount">
+            $3,000
+          </div>
+
+          <div class="currency">
+            Pesos mexicanos
+          </div>
+
+        </article>
+
+
+        <article class="prize-card first reveal">
+
+          <div class="winner-badge">
+            Gran premio
+          </div>
+
+          <div class="place">
+            1er Lugar
+          </div>
+
+          <div class="amount">
+            $12,000
+          </div>
+
+          <div class="currency">
+            Pesos mexicanos
+          </div>
+
+        </article>
+
+
+        <article class="prize-card third reveal">
+
+          <div class="place">
+            3er Lugar
+          </div>
+
+          <div class="amount">
+            $1,500
+          </div>
+
+          <div class="currency">
+            Pesos mexicanos
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       WHY COMPETE
+  ========================================================== -->
+
+  <section class="section why">
+
+    <div class="container">
+
+      <div class="section-heading reveal">
+
+        <div class="eyebrow">
+          Para quienes bailan en serio
+        </div>
+
+        <h2>
+          Tu próxima gran<br>
+          pista puede ser esta.
+        </h2>
+
+        <div class="gold-line"></div>
+
+      </div>
+
+
+      <div class="why-grid">
+
+        <article class="why-card reveal">
+
+          <div class="why-icon">
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 2l2.6 6.3L21 11l-6.4 2.1L12 20l-2.6-6.9L3 11l6.4-2.7L12 2z"/>
+            </svg>
+
+          </div>
+
+          <h3>
+            Comparte<br>
+            la pista
+          </h3>
+
+          <p>
+            Encuéntrate con bailarines y parejas
+            que comparten la misma pasión por la salsa.
+          </p>
+
+        </article>
+
+
+        <article class="why-card reveal">
+
+          <div class="why-icon">
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 3l2.7 5.5L21 9.4l-4.5 4.3 1.1 6.1L12 17l-5.6 2.8 1.1-6.1L3 9.4l6.3-.9L12 3z"/>
+            </svg>
+
+          </div>
+
+          <h3>
+            Vive<br>
+            el escenario
+          </h3>
+
+          <p>
+            Pon tu interpretación frente a los jueces,
+            el público y toda la energía de una noche especial.
+          </p>
+
+        </article>
+
+
+        <article class="why-card reveal">
+
+          <div class="why-icon">
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M8 12l2.5 2.5L16 9"/>
+            </svg>
+
+          </div>
+
+          <h3>
+            Haz que<br>
+            te recuerden
+          </h3>
+
+          <p>
+            La competencia termina.
+            La experiencia y el momento que construyes
+            sobre la pista se quedan.
+          </p>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       TICKETS
+  ========================================================== -->
+
+  <section class="section tickets" id="boletos">
+
+    <div class="container">
+
+      <div class="ticket-header section-heading reveal">
+
+        <div class="eyebrow">
+          Elige cómo quieres vivirlo
+        </div>
+
+        <h2>
+          Tu lugar en<br>
+          UN SOLO COMPÁS.
+        </h2>
+
+        <div class="gold-line"></div>
+
+        <p>
+          Puedes venir a disfrutar del espectáculo o ser parte
+          de quienes estarán dentro de la competencia.
+        </p>
+
+      </div>
+
+
+      <div class="ticket-grid">
+
+        <!-- PUBLICO -->
+
+        <article class="ticket-card ticket-public reveal">
+
+          <div class="ticket-type">
+            Público
+          </div>
+
+          <h3>
+            Entrada general
+          </h3>
+
+          <p>
+            Para quienes quieren vivir la competencia,
+            apoyar a sus parejas favoritas y disfrutar
+            de una noche de salsa en Puerto Vallarta.
+          </p>
+
+          <div class="ticket-price">
+            $350
+            <small>MXN</small>
+          </div>
+
+          <a href="#contacto" class="btn btn-gold">
+            Comprar boleto
+          </a>
+
+        </article>
+
+
+        <!-- COMPETIDOR -->
+
+        <article class="ticket-card ticket-competitor reveal">
+
+          <div class="ticket-type">
+            Competidores
+          </div>
+
+          <h3>
+            Inscripción de pareja
+          </h3>
+
+          <p>
+            Inscripción para una pareja competidora.
+            Incluye su entrada como espectadores.
+          </p>
+
+          <div class="ticket-price">
+            $500
+            <small>MXN</small>
+          </div>
+
+          <a href="#contacto" class="btn btn-red">
+            Inscribir pareja
+          </a>
+
+          <div class="ticket-notice">
+
+            <span>
+              Fecha límite
+            </span>
+
+            <strong>
+              15 Dic. 2026
+            </strong>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       PROCESS
+  ========================================================== -->
+
+  <section class="section process">
+
+    <div class="container">
+
+      <div class="process-box reveal">
+
+        <div class="section-heading">
+
+          <div class="eyebrow">
+            Inscribirte es fácil
+          </div>
+
+          <h2>
+            Tres pasos.<br>
+            Una gran noche.
+          </h2>
+
+          <div class="gold-line"></div>
+
+        </div>
+
+
+        <div class="process-grid">
+
+          <article class="process-item">
+
+            <div class="process-number">
+              01
+            </div>
+
+            <h3>
+              Escríbenos
+            </h3>
+
+            <p>
+              Ponte en contacto por WhatsApp
+              para comenzar tu proceso de inscripción.
+            </p>
+
+          </article>
+
+
+          <article class="process-item">
+
+            <div class="process-number">
+              02
+            </div>
+
+            <h3>
+              Reserva
+            </h3>
+
+            <p>
+              Recibe las instrucciones para completar
+              tu inscripción y asegurar tu participación.
+            </p>
+
+          </article>
+
+
+          <article class="process-item">
+
+            <div class="process-number">
+              03
+            </div>
+
+            <h3>
+              Prepárate
+            </h3>
+
+            <p>
+              Ensaya, prepara tu vestuario y llega listo
+              para vivir la pista.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       FAQ
+  ========================================================== -->
+
+  <section class="section" id="faq">
+
+    <div class="container">
+
+      <div class="section-heading center reveal">
+
+        <div class="eyebrow" style="justify-content:center;">
+          Información
+        </div>
+
+        <h2>
+          Antes de subir<br>
+          a la pista.
+        </h2>
+
+        <div class="gold-line center"></div>
+
+      </div>
+
+
+      <div class="faq-grid reveal">
+
+        <div class="faq-item">
+
+          <button class="faq-question">
+
+            <span>
+              ¿Cuál es la categoría de la competencia?
+            </span>
+
+            <span class="faq-plus">+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              Salsa abierta, pareja mixta:
+              un hombre y una mujer.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+          <button class="faq-question">
+
+            <span>
+              ¿Cuánto debe durar la coreografía?
+            </span>
+
+            <span class="faq-plus">+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              La duración deberá ser de 2:00 a 2:30 minutos
+              por pareja.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+          <button class="faq-question">
+
+            <span>
+              ¿Cómo se determina el orden de participación?
+            </span>
+
+            <span class="faq-plus">+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              El orden de participación será definido
+              mediante sorteo.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+          <button class="faq-question">
+
+            <span>
+              ¿Qué aspectos califican los jueces?
+            </span>
+
+            <span class="faq-plus">+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              Técnica, sincronía, musicalidad, vestuario
+              y conexión con el público.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+          <button class="faq-question">
+
+            <span>
+              ¿Hasta cuándo puedo inscribirme?
+            </span>
+
+            <span class="faq-plus">+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              La fecha límite de inscripción es el
+              15 de diciembre de 2026.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="faq-item">
+
+          <button class="faq-question">
+
+            <span>
+              ¿Dónde puedo pedir información?
+            </span>
+
+            <span class="faq-plus">+</span>
+
+          </button>
+
+          <div class="faq-answer">
+
+            <p>
+              Puedes solicitar información y comenzar
+              tu inscripción mediante WhatsApp.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       FINAL CTA
+  ========================================================== -->
+
+  <section class="final-cta" id="contacto">
+
+    <div class="container">
+
+      <div class="final-content reveal">
+
+        <div class="eyebrow">
+          Ahora comienza tu historia
+        </div>
+
+        <h2>
+          La pista está lista.<br>
+          <span>¿Y ustedes?</span>
+        </h2>
+
+        <div class="gold-line"></div>
+
+        <p>
+          Reserva tu entrada o inscribe a tu pareja.
+          Puerto Vallarta será el escenario.
+          La música pondrá el compás.
+          Lo que ocurra sobre la pista depende de ustedes.
+        </p>
+
+        <div class="final-actions">
+
+          <!-- =================================================
+               REEMPLAZAR [NÚMERO_WHATSAPP]
+               por ejemplo:
+               521XXXXXXXXXX
+          ================================================== -->
+
+          <a
+            href="https://wa.me/[NÚMERO_WHATSAPP]"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-green"
+          >
+            WhatsApp · Inscripciones
+          </a>
+
+          <a href="#boletos" class="btn btn-gold">
+            Ver precios
+          </a>
+
+        </div>
+
+        <div class="fineprint">
+          WhatsApp: [NÚMERO_WHATSAPP]
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-logo">
+          UN SOLO <span>COMPÁS</span>
+        </div>
+
+        <div class="footer-info">
+
+          <strong>
+            Puerto Vallarta · Jalisco
+          </strong>
+
+          Salón del IMSS<br>
+
+          Sábado 30 de enero de 2027
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <div>
+          Copa Cuba–México de Salsa
+        </div>
+
+        <div>
+          Instagram:
+          <span class="instagram">
+            [USUARIO_INSTAGRAM]
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================================================
+       MOBILE CTA
+  ========================================================== -->
+
+  <a
+    href="#contacto"
+    class="floating-cta"
+  >
+    Inscríbete / Compra tu boleto
+  </a>
+
+
+  <!-- =========================================================
+       JAVASCRIPT
+  ========================================================== -->
+
+  <script>
+
+    /* =========================================================
+       REVEAL ON SCROLL
+    ========================================================== */
+
+    const revealElements = document.querySelectorAll(".reveal");
+
+    const revealObserver = new IntersectionObserver(
+      (entries) => {
+
+        entries.forEach((entry) => {
+
+          if (entry.isIntersecting) {
+
+            entry.target.classList.add("visible");
+
+            revealObserver.unobserve(entry.target);
+
+          }
+
+        });
+
+      },
+      {
+        threshold: 0.12
+      }
+    );
+
+
+    revealElements.forEach((element) => {
+      revealObserver.observe(element);
+    });
+
+
+    /* =========================================================
+       COUNTDOWN
+    ========================================================== */
+
+    const targetDate = new Date("January 30, 2027 20:00:00").getTime();
+
+    const daysEl = document.getElementById("days");
+    const hoursEl = document.getElementById("hours");
+    const minutesEl = document.getElementById("minutes");
+    const secondsEl = document.getElementById("seconds");
+
+
+    function updateCountdown() {
+
+      const now = new Date().getTime();
+
+      const distance = targetDate - now;
+
+
+      if (distance <= 0) {
+
+        daysEl.textContent = "000";
+        hoursEl.textContent = "00";
+        minutesEl.textContent = "00";
+        secondsEl.textContent = "00";
+
+        return;
+
+      }
+
+
+      const days = Math.floor(
+        distance / (1000 * 60 * 60 * 24)
+      );
+
+      const hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24))
+        / (1000 * 60 * 60)
+      );
+
+      const minutes = Math.floor(
+        (distance % (1000 * 60 * 60))
+        / (1000 * 60)
+      );
+
+      const seconds = Math.floor(
+        (distance % (1000 * 60))
+        / 1000
+      );
+
+
+      daysEl.textContent = String(days).padStart(3, "0");
+      hoursEl.textContent = String(hours).padStart(2, "0");
+      minutesEl.textContent = String(minutes).padStart(2, "0");
+      secondsEl.textContent = String(seconds).padStart(2, "0");
+
+    }
+
+
+    updateCountdown();
+
+    setInterval(updateCountdown, 1000);
+
+
+    /* =========================================================
+       FAQ ACCORDION
+    ========================================================== */
+
+    const faqItems = document.querySelectorAll(".faq-item");
+
+
+    faqItems.forEach((item) => {
+
+      const button = item.querySelector(".faq-question");
+      const answer = item.querySelector(".faq-answer");
+
+
+      button.addEventListener("click", () => {
+
+        const wasActive = item.classList.contains("active");
+
+
+        faqItems.forEach((otherItem) => {
+
+          otherItem.classList.remove("active");
+
+          otherItem.querySelector(".faq-answer").style.maxHeight = null;
+
+        });
+
+
+        if (!wasActive) {
+
+          item.classList.add("active");
+
+          answer.style.maxHeight =
+            answer.scrollHeight + "px";
+
+        }
+
+      });
+
+    });
+
+
+    /* =========================================================
+       SMOOTH INTERNAL LINKS
+    ========================================================== */
+
+    document.querySelectorAll('a[href^="#"]').forEach((link) => {
+
+      link.addEventListener("click", function(event) {
+
+        const targetId = this.getAttribute("href");
+
+        if (!targetId || targetId === "#") {
+          return;
+        }
+
+        const target = document.querySelector(targetId);
+
+        if (!target) {
+          return;
+        }
+
+        event.preventDefault();
+
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+
+      });
+
+    });
+
+  </script>
+
+
+  <!-- =========================================================
+       BASIC EVENT STRUCTURED DATA
+  ========================================================== -->
+
+  <script type="application/ld+json">
+
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "UN SOLO COMPÁS — Copa Cuba–México de Salsa",
+    "description": "Competencia de salsa abierta para pareja mixta en Puerto Vallarta, Jalisco.",
+    "startDate": "2027-01-30",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+
+    "location": {
+      "@type": "Place",
+      "name": "Salón del IMSS",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Puerto Vallarta",
+        "addressRegion": "Jalisco",
+        "addressCountry": "MX"
+      }
+    },
+
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Entrada general",
+        "price": "350",
+        "priceCurrency": "MXN",
+        "availability": "https://schema.org/InStock"
+      },
+      {
+        "@type": "Offer",
+        "name": "Inscripción pareja competidora",
+        "price": "500",
+        "priceCurrency": "MXN",
+        "availability": "https://schema.org/InStock"
+      }
+    ]
+
+  }
+
+  </script>
+
+
+</body>
+</html>
